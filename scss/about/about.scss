@@ -99,13 +99,28 @@ and (max-width: 480px) {
         .container {
             width: 100%;
             flex-direction: column;
-            margin-bottom: 6%;
+            margin-bottom: 10%;
 
             .image{
+                display: flex;
+                align-items: center;
+                width: 100%;
 
                 img {
                     padding-right: 0;
                     padding-bottom: 3%;
+                    margin: 0 auto;
+                }
+            }
+
+            .quote-container {
+                
+                .quote {
+                    height: 90%;
+                }
+                
+                .name {
+                    height: 10%;
                 }
             }
         }

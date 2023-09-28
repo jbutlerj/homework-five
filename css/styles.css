@@ -1202,11 +1202,27 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 6%;
+    margin-bottom: 10%;
+  }
+  .quotes .container .image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
   }
   .quotes .container .image img {
     padding-right: 0;
     padding-bottom: 3%;
+    margin: 0 auto;
+  }
+  .quotes .container .quote-container .quote {
+    height: 90%;
+  }
+  .quotes .container .quote-container .name {
+    height: 10%;
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 800px) {
