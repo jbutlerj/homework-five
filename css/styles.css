@@ -1,0 +1,1359 @@
+@import url("https://use.typekit.net/yqs8xsv.css");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.site-container {
+  max-width: 1280px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: Proxima-Nova;
+  src: url(fonts/proxima-nova/Proxima-Nova-Extra-Condensed-Thin.otf);
+}
+@font-face {
+  font-family: Gills-Sans;
+  src: url(fonts/gill-sans/Gill-Sans.otf);
+}
+.wordmark-white {
+  width: 92px;
+  height: 42px;
+  position: relative;
+  border: solid 2px #fff;
+}
+.wordmark-white span {
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  color: #fff;
+  font-family: Gill-Sans;
+  font-size: 20px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.wordmark-black {
+  width: 92px;
+  height: 42px;
+  position: relative;
+  border: solid 2px #000;
+}
+.wordmark-black span {
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
+  color: #000;
+  font-family: Gill-Sans;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.header-white {
+  width: 100%;
+  position: relative;
+}
+.header-white .full-size {
+  position: fixed;
+  height: 100px;
+  width: 80%;
+  max-width: 1024px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: solid 2px #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-white .full-size .links {
+  width: 500px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.header-white .full-size .links a {
+  color: #fff;
+  text-decoration: none;
+  font-family: Gill-Sans-Reg;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.header-white .full-size .links span {
+  color: #70addc;
+}
+.header-white .mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-white .full-size {
+    display: none;
+  }
+  .header-white .mobile {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    max-width: 1024px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.25);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-white .mobile .wordmark-white {
+    display: none;
+  }
+  .header-white .mobile .links {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-white .mobile .links a {
+    width: 16.6666666667%;
+    text-decoration: none;
+  }
+  .header-white .mobile .links a .link-button {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: solid 1px white;
+  }
+  .header-white .mobile .links a span {
+    color: #fff;
+    font-family: Gill-Sans-Reg;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .header-white .full-size {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: none;
+    padding-top: 20px;
+  }
+  .header-white .full-size .wordmark-white {
+    margin-bottom: 10px;
+  }
+  .header-white .full-size .links {
+    border-bottom: solid 2px #fff;
+  }
+}
+.header-black {
+  width: 100%;
+  position: relative;
+}
+.header-black .full-size {
+  position: fixed;
+  height: 100px;
+  width: 80%;
+  max-width: 1024px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-bottom: solid 2px #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-black .full-size .links {
+  width: 500px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.header-black .full-size .links a {
+  color: #000;
+  text-decoration: none;
+  font-family: Gill-Sans-Reg;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.header-black .full-size .links span {
+  color: #70addc;
+}
+.header-black .mobile {
+  display: none;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header-black .full-size {
+    display: none;
+  }
+  .header-black .mobile {
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    max-width: 1024px;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-black .mobile .wordmark-black {
+    display: none;
+  }
+  .header-black .mobile .links {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header-black .mobile .links a {
+    width: 16.6666666667%;
+    text-decoration: none;
+  }
+  .header-black .mobile .links a .link-button {
+    height: 50px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: solid 1px #999;
+  }
+  .header-black .mobile .links a span {
+    color: #000;
+    font-family: Gill-Sans-Reg;
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .header-black .full-size {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: none;
+    padding-top: 20px;
+  }
+  .header-black .full-size .wordmark-black {
+    margin-bottom: 10px;
+  }
+  .header-black .full-size .links {
+    border-bottom: solid 2px #000;
+  }
+}
+.home {
+  width: 100%;
+}
+.home .hero {
+  width: 100%;
+  height: 500px;
+  background-image: url(../images/travel-fly-hero.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+.home .hero .callout {
+  width: 415px;
+  margin: 0 auto;
+  padding-top: 150px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.home .hero .callout .wordmark-white {
+  display: none;
+}
+.home .hero .callout h1 {
+  font-family: Proxima-Nova;
+  font-weight: 100;
+  letter-spacing: 1;
+  line-height: 73px;
+  font-size: 60px;
+  margin-bottom: 26px;
+}
+.home .hero .callout h4 {
+  font-family: Gill-Sans;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 23px;
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.home .hero .callout a {
+  text-decoration: none;
+}
+.home .hero .callout a .read-more {
+  width: 120px;
+  height: 40px;
+  margin: 50px auto 0 auto;
+  background-color: #79ADDC;
+  color: #fff;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips {
+  margin-top: -43px;
+  min-height: 304px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .promo-trips .tile-container {
+  width: 820px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .promo-trips .tile-container .trip-tile-1 {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/israel.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.home .promo-trips .tile-container .trip-tile-1 .top {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+.home .promo-trips .tile-container .trip-tile-1 .top h1 {
+  font-family: Proxima-Nova;
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.home .promo-trips .tile-container .trip-tile-1 .top h3 {
+  font-family: Proxima-Nova;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+.home .promo-trips .tile-container .trip-tile-1 .bottom {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.home .promo-trips .tile-container .trip-tile-1 .bottom a {
+  text-decoration: none;
+}
+.home .promo-trips .tile-container .trip-tile-1 .bottom a .learn-more {
+  background-color: #70addc;
+  border-radius: 20px;
+  color: #fff;
+  padding: 11px 21px;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 133px;
+  max-height: 40px;
+  margin-top: 20%;
+}
+.home .promo-trips .tile-container .trip-tile-2 {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/usa.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.home .promo-trips .tile-container .trip-tile-2 .top {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+.home .promo-trips .tile-container .trip-tile-2 .top h1 {
+  font-family: Proxima-Nova;
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.home .promo-trips .tile-container .trip-tile-2 .top h3 {
+  font-family: Proxima-Nova;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+.home .promo-trips .tile-container .trip-tile-2 .bottom {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.home .promo-trips .tile-container .trip-tile-2 .bottom a {
+  text-decoration: none;
+}
+.home .promo-trips .tile-container .trip-tile-2 .bottom a .learn-more {
+  background-color: #70addc;
+  border-radius: 20px;
+  color: #fff;
+  padding: 11px 21px;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 133px;
+  max-height: 40px;
+  margin-top: 20%;
+}
+.home .promo-trips .tile-container .trip-tile-3 {
+  width: 236px;
+  height: 304px;
+  background-image: url("../images/austrailia.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #fff;
+}
+.home .promo-trips .tile-container .trip-tile-3 .top {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+.home .promo-trips .tile-container .trip-tile-3 .top h1 {
+  font-family: Proxima-Nova;
+  font-size: 60px;
+  line-height: 73px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.home .promo-trips .tile-container .trip-tile-3 .top h3 {
+  font-family: Proxima-Nova;
+  font-size: 30px;
+  line-height: 37px;
+  font-weight: 100;
+  letter-spacing: 0;
+  text-transform: lowercase;
+}
+.home .promo-trips .tile-container .trip-tile-3 .bottom {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.home .promo-trips .tile-container .trip-tile-3 .bottom a {
+  text-decoration: none;
+}
+.home .promo-trips .tile-container .trip-tile-3 .bottom a .learn-more {
+  background-color: #70addc;
+  border-radius: 20px;
+  color: #fff;
+  padding: 11px 21px;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  max-width: 133px;
+  max-height: 40px;
+  margin-top: 20%;
+}
+.home .booking {
+  min-height: 400px;
+  padding: 50px;
+}
+.home .booking .booking-wrapper {
+  max-width: 65%;
+  margin: 0 auto;
+}
+.home .booking .booking-wrapper h1 {
+  font-family: Proxima-Nova;
+  font-weight: 300;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 73px;
+  font-size: 56px;
+  margin-bottom: 32px;
+}
+.home .booking .booking-wrapper h1 span {
+  font-size: 66px;
+}
+.home .booking .booking-wrapper form {
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+}
+.home .booking .booking-wrapper form .input-row {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .input-row .short-input {
+  width: 40%;
+}
+.home .booking .booking-wrapper form .input-row .short-input input {
+  width: 100%;
+  height: 58px;
+  padding-left: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .input-row .long-input {
+  width: 58%;
+}
+.home .booking .booking-wrapper form .input-row .long-input input {
+  width: 100%;
+  height: 58px;
+  padding-left: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .date-row {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .date-row label {
+  width: 15%;
+}
+.home .booking .booking-wrapper form .date-row input {
+  width: 85%;
+  height: 58px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .dd-row {
+  width: 100%;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .dd-row .adult {
+  width: calc(33.3333333333% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .dd-row .adult label {
+  width: 50%;
+}
+.home .booking .booking-wrapper form .dd-row .adult select {
+  width: 50%;
+  height: 58px;
+  padding-left: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .dd-row .children {
+  width: calc(33.3333333333% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .dd-row .children label {
+  width: 50%;
+}
+.home .booking .booking-wrapper form .dd-row .children select {
+  width: 50%;
+  height: 58px;
+  padding-left: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .dd-row .rooms {
+  width: calc(33.3333333333% - 40px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home .booking .booking-wrapper form .dd-row .rooms label {
+  width: 50%;
+}
+.home .booking .booking-wrapper form .dd-row .rooms select {
+  width: 50%;
+  height: 58px;
+  padding-left: 20px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .textarea {
+  width: 100%;
+}
+.home .booking .booking-wrapper form .textarea textarea {
+  width: 100%;
+  min-height: 150px;
+  max-height: 200px;
+  font-family: Gill-Sans;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: 0;
+  padding: 20px;
+  border: solid 1px #79ADDC;
+}
+.home .booking .booking-wrapper form .button-row {
+  margin-top: 37px;
+}
+.home .booking .booking-wrapper form .button-row a {
+  text-decoration: none;
+}
+.home .booking .booking-wrapper form .button-row a .subBTN {
+  background-color: #70addc;
+  border-radius: 30px;
+  color: #fff;
+  padding: 21px 21px;
+  font-family: Gill-Sans;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 300;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .home .hero {
+    max-height: 300px;
+  }
+  .home .hero .callout {
+    width: 75%;
+    padding-top: 25%;
+  }
+  .home .hero .callout .wordmark-white {
+    display: block;
+    margin-bottom: 10%;
+  }
+  .home .hero .callout h1 {
+    display: none;
+  }
+  .home .hero .callout h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .home .promo-trips .tile-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .promo-trips .tile-container div {
+    margin: 0 auto 20px auto;
+  }
+  .home .booking {
+    padding: 10px;
+  }
+  .home .booking .booking-wrapper {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper h1 {
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .home .booking .booking-wrapper h1 span {
+    font-size: 48px;
+  }
+  .home .booking .booking-wrapper form {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .input-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .booking .booking-wrapper form .input-row .short-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .input-row .long-input {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .date-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .booking .booking-wrapper form .date-row label {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .home .booking .booking-wrapper form .date-row input {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .dd-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult label {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult select {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .dd-row .children {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .children label {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .home .booking .booking-wrapper form .dd-row .children select {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms label {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2%;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms select {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .button-row {
+    margin: 10% 0;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .home .promo-trips .tile-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .promo-trips .tile-container div {
+    margin: 0 auto 20px auto;
+  }
+  .home .booking {
+    padding: 25px;
+  }
+  .home .booking .booking-wrapper form {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .input-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .home .booking .booking-wrapper form .input-row .short-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .input-row .long-input {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .date-row label {
+    width: 22%;
+  }
+  .home .booking .booking-wrapper form .date-row input {
+    width: 78%;
+  }
+  .home .booking .booking-wrapper form .dd-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult label {
+    width: 22%;
+  }
+  .home .booking .booking-wrapper form .dd-row .adult select {
+    width: 78%;
+  }
+  .home .booking .booking-wrapper form .dd-row .children {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home .booking .booking-wrapper form .dd-row .children label {
+    width: 22%;
+  }
+  .home .booking .booking-wrapper form .dd-row .children select {
+    width: 78%;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms {
+    width: 100%;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms label {
+    width: 22%;
+  }
+  .home .booking .booking-wrapper form .dd-row .rooms select {
+    width: 78%;
+  }
+  .home .booking .booking-wrapper form .button-row {
+    margin-top: 20px;
+  }
+}
+.about {
+  width: 80%;
+  margin: 15% auto 8% auto;
+}
+.about h1 {
+  font-family: Proxima-Nova;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 80px;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+.about h1 span {
+  border-bottom: solid 2px #000;
+}
+.about p {
+  font-family: Gill-Sans;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.quotes {
+  width: 80%;
+  margin: 0 auto 12% auto;
+}
+.quotes h2 {
+  font-family: Proxima-Nova;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 53px;
+  text-transform: uppercase;
+  margin-bottom: 3%;
+}
+.quotes span {
+  border-bottom: solid 2px #000;
+}
+.quotes .container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 3%;
+}
+.quotes .container .image img {
+  height: 150px;
+  width: 260px;
+  padding-right: 5%;
+}
+.quotes .container .quote-container {
+  position: relative;
+}
+.quotes .container .quote-container .quote p {
+  font-family: Gill-Sans;
+  font-size: 16px;
+  line-height: 20px;
+  font-style: italic;
+}
+.quotes .container .quote-container .name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.quotes .container .quote-container .name h5 {
+  margin-bottom: 0;
+  color: #70addc;
+  text-align: end;
+  font-family: Proxima-Nova;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 27px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .about {
+    margin-top: 20%;
+  }
+  .quotes .container {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 6%;
+  }
+  .quotes .container .image img {
+    padding-right: 0;
+    padding-bottom: 3%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  .quotes .container {
+    width: 100%;
+  }
+}
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #79ADDC;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 31px;
+}
+footer .full-size {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .full-size .wordmark-container {
+  width: 33.3333333333%;
+}
+footer .full-size .copyright {
+  width: 33.3333333333%;
+  font-family: Gill-Sans;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0;
+  font-weight: 300;
+  text-align: center;
+  color: #fff;
+}
+footer .full-size .socials {
+  width: 33.3333333333%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer .full-size .socials a {
+  padding-left: 23px;
+  text-decoration: none;
+}
+footer .full-size .socials a img {
+  width: 23px;
+  height: 23px;
+}
+footer .mobile {
+  width: 100%;
+  height: 100%;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .mobile .top {
+  width: 100%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+footer .mobile .top .wordmark-container {
+  width: 50%;
+  height: 100%;
+  padding-top: 10px;
+}
+footer .mobile .top .socials {
+  width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+footer .mobile .top .socials a {
+  padding-left: 7px;
+  text-decoration: none;
+}
+footer .mobile .top .socials a img {
+  width: 23px;
+  height: 23px;
+}
+footer .mobile .bottom {
+  height: 20%;
+  width: 100%;
+}
+footer .mobile .bottom .copyright {
+  width: 100%;
+  height: 100%;
+  font-family: Gill-Sans;
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: 0;
+  font-weight: 200;
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  footer {
+    padding: 5px 10px;
+  }
+  footer .full-size {
+    display: none;
+  }
+  footer .mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  footer {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}

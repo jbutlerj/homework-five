@@ -1,0 +1,125 @@
+.about {
+    width: 80%;
+    margin: 15% auto 8% auto;
+
+    h1 {
+        font-family: Proxima-Nova;
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 80px;
+        text-transform: uppercase;
+        margin-bottom: 3%;
+
+        span {
+            border-bottom: solid 2px #000;
+        }
+    }
+
+    p {
+        font-family: Gill-Sans;
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+
+.quotes {
+    width: 80%;
+    margin: 0 auto 12% auto;
+
+    h2 {
+        font-family: Proxima-Nova;
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 53px;
+        text-transform: uppercase;
+        margin-bottom: 3%;
+    }
+
+        span {
+            border-bottom: solid 2px #000;
+        }
+
+    .container {
+        width: 60%;
+        display: flex;
+        margin-bottom: 3%;
+
+        .image{
+
+            img {
+                height: 150px;
+                width: 260px;
+                padding-right: 5%;
+            }
+        }
+        .quote-container {
+            position: relative;
+
+            .quote {
+
+                p {
+                    font-family: Gill-Sans;
+                    font-size: 16px;
+                    line-height: 20px;
+                    font-style: italic;
+
+                }
+            }
+
+            .name {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+
+                h5 {
+                    margin-bottom: 0;
+                    color: #70addc;
+                    text-align: end;
+                    font-family: Proxima-Nova;
+                    font-size: 20px;
+                    font-weight: 200;
+                    line-height: 27px;
+                }
+            }
+        }
+    }
+}
+
+// Smartphones
+@media only screen 
+and (min-width: 320px) 
+and (max-width: 480px) {
+
+    .about {
+        margin-top: 20%;
+    }
+
+    .quotes {
+        .container {
+            width: 100%;
+            flex-direction: column;
+            margin-bottom: 6%;
+
+            .image{
+
+                img {
+                    padding-right: 0;
+                    padding-bottom: 3%;
+                }
+            }
+        }
+    }
+}
+
+// for assignment
+@media only screen 
+and (min-width: 481px)
+and (max-width: 800px) {
+
+    .quotes {
+        .container {
+            width: 100%;
+        }
+    }
+}
